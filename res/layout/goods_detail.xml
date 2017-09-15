@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/details_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/detail_layout" android:background="@drawable/tab_bar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/navigation_back_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_btn" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/separator_line" android:layout_width="2.0dip" android:layout_height="wrap_content" android:src="@drawable/navigation_separator_line" android:layout_toRightOf="@id/navigation_back_button" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/detail_header_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/add_to_cart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/featured_productbasic_cart_btn" android:layout_alignParentRight="true" />
+        <TextView android:textSize="9.0sp" android:gravity="center" android:id="@id/tv_cart_count" android:background="@drawable/quantity_circle" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginRight="10.0dip" android:text="0" android:singleLine="true" android:layout_alignTop="@id/detail_layout" android:layout_alignRight="@id/add_to_cart" />
+    </RelativeLayout>
+    <Gallery android:gravity="left" android:id="@id/goods_gallery" android:tag="mygallery" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="1.0dip" android:spacing="5.0dip" android:layout_below="@id/detail_layout" />
+</RelativeLayout>
